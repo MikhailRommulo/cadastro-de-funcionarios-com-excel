@@ -1,0 +1,7 @@
+{
+  "name": "cadastro-de-funcionarios-com-excel",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
