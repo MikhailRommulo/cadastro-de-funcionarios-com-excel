@@ -4,10 +4,13 @@ import {
   IonPage,
   IonContent,
   useIonViewWillEnter,
-  IonLabel,
   IonButton,
-  IonCardContent
+  IonCardContent,
+  IonCardHeader,
+  IonCardTitle
 } from '@ionic/react';
+
+import { Label } from '../../theme/custom-styles-components/label';
 
 import { Card } from './styles';
 
@@ -22,17 +25,19 @@ const Landing: React.FC = () => {
 
       <IonContent color="light" fullscreen>
         <Card color="secondary">
-          <IonCardContent>
-            <IonLabel className="ion-text-justify">
-              Cadastre vários funcionários de uma vez com uma planilha do excel.
-            </IonLabel>
-          </IonCardContent>
+          <IonCardHeader>
+            <IonCardTitle>
+              <Label className="ion-text-justify">
+                Cadastre vários funcionários de uma vez com uma planilha do excel.
+              </Label>
+            </IonCardTitle>
+          </IonCardHeader>
           <IonCardContent>
             <IonButton expand="block" color="light" className="ion-margin-bottom">
-              <IonLabel>Entrar</IonLabel>
+              <Label font={'Archivo'}>Entrar</Label>
             </IonButton>
             <IonButton expand="block" color="tertiary">
-              <IonLabel>Cadastrar</IonLabel>
+              <Label font={'Archivo'}>Cadastrar</Label>
             </IonButton>
           </IonCardContent>
         </Card>
