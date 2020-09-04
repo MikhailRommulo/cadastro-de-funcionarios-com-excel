@@ -33,10 +33,10 @@ const Landing: React.FC = () => {
             </IonCardTitle>
           </IonCardHeader>
           <IonCardContent>
-            <IonButton expand="block" color="light" className="ion-margin-bottom">
+            <IonButton expand="block" color="light" className="ion-margin-bottom" routerLink="/login">
               <Label font={'Archivo'}>Entrar</Label>
             </IonButton>
-            <IonButton expand="block" color="tertiary">
+            <IonButton expand="block" color="primary" routerLink="/register">
               <Label font={'Archivo'}>Cadastrar</Label>
             </IonButton>
           </IonCardContent>

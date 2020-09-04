@@ -1,4 +1,3 @@
-import { Label } from './../../theme/custom-styles-components/label';
 import styled from 'styled-components';
 
 import { IonCard } from '@ionic/react';
